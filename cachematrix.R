@@ -30,11 +30,13 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-##this function returns the value stored in cache if a value is stored
-##and shows a message indicating that the value has come from the cache
-##if the value of m is null indicating there is no value stored in the
+##If a value for the inverse of a matrix object is stored in the cache 
+##(ie has already been calculated) this function will return the cached
+##value and show a message indicating that the value has come from the cache.
+
+##If the value of m is null indicating there is no value stored in the
 ##cache it runs the functions from the first function which get the matrix,
-##solve its inverse and return the inverse
+##solve its inverse and return the inverse.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
